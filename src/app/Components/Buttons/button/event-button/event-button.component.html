@@ -1,0 +1,19 @@
+<p>
+  <button
+    kendoButton
+    (click)="onClick()"
+    (focus)="onFocus()"
+    (blur)="onBlur()"
+  >
+    My Button
+  </button>
+
+  <button
+    kendoButton
+    [toggleable]="true"
+    (selectedChange)="selectedChange()"
+  >
+    Toggleable Button
+  </button>
+</p>
+<app-event-log title="Event log" [events]="events"></app-event-log>

@@ -1,0 +1,64 @@
+<div class="k-card-deck">
+  <div class="k-card">
+    <img
+      class="k-card-image"
+      src="https://demos.telerik.com/kendo-ui/content/shared/images/foods/200/12.jpg"
+      alt="Queso Manchego La Pastora"
+    />
+    <div class="k-card-body">
+      <kendo-barcode type="EAN8" value="2346722"> </kendo-barcode>
+    </div>
+  </div>
+  <div class="k-card k-card-type-rich">
+    <img
+      class="k-card-image"
+      src="https://demos.telerik.com/kendo-ui/content/shared/images/foods/200/32.jpg"
+      alt="Mascarpone Fabioli"
+    />
+    <div class="k-card-body">
+      <kendo-barcode type="Code128" value="Mascarpone"> </kendo-barcode>
+    </div>
+  </div>
+  <div class="k-card k-card-type-rich">
+    <img
+      class="k-card-image"
+      src="https://demos.telerik.com/kendo-ui/content/shared/images/foods/200/72.jpg"
+      alt="Gudbrandsdalsost"
+    />
+    <div class="k-card-body">
+      <kendo-barcode type="Code39" value="BRUNOST"> </kendo-barcode>
+    </div>
+  </div>
+</div>
+
+<div class="example-config" [formGroup]="options">
+  <div class="field">
+    <label [for]="valueInput"
+      >Modify or clear the value to see the validation error:</label
+    >
+    <div>
+      <kendo-textbox
+        #valueInput
+        formControlName="value"
+        [style.width.px]="200"
+      >
+      </kendo-textbox>
+
+      <div *ngIf="value.invalid" class="k-form-error">
+        <div *ngIf="value.errors?.required">Value is required.</div>
+        <div *ngIf="value.errors?.barcode">
+          {{ value.errors.barcode.message }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="width: 20%;">
+  <kendo-barcode
+    *ngIf="options.valid"
+    [type]="type"
+    [value]="options.value.value!"
+    [checksum]="true"
+  ></kendo-barcode>
+</div>

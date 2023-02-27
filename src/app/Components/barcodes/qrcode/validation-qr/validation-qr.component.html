@@ -1,0 +1,31 @@
+<div class="example-config" [formGroup]="options">
+  <div class="field">
+    <label [for]="valueInput"
+      >Replace the value to clear the validation error:</label
+    >
+    <div>
+      <kendo-textbox
+        #valueInput
+        formControlName="value"
+        [style.width.px]="200"
+      >
+      </kendo-textbox>
+
+      <div *ngIf="value.invalid" class="k-form-error">
+        <div *ngIf="value.errors?.required">Value is required.</div>
+        <div *ngIf="value.errors?.qrcode">
+          {{ value.errors.qrcode.message }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="width: 20%;">
+  <kendo-qrcode
+    *ngIf="options.valid"
+    [encoding]="encoding"
+    [value]="options.value.value!"
+  >
+  </kendo-qrcode>
+</div>

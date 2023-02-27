@@ -1,0 +1,42 @@
+<div class="k-card-deck">
+  <div class="k-card k-text-center">
+    <div class="k-card-body">
+      <kendo-barcode #barcode type="Code128" value="Mascarpone">
+      </kendo-barcode>
+    </div>
+    <div class="k-card-actions k-card-actions-stretched">
+      <span class="k-card-action">
+        <button
+          kendoButton
+          fillMode="flat"
+          themeColor="primary"
+          (click)="exportBarcode()"
+        >
+          Export as Image
+        </button>
+      </span>
+    </div>
+  </div>
+  <div class="k-card k-text-center">
+    <div class="k-card-body">
+      <kendo-qrcode
+        #qrcode
+        value="https://www.telerik.com/kendo-angular-ui/"
+        errorCorrection="M"
+      >
+      </kendo-qrcode>
+    </div>
+    <div class="k-card-actions k-card-actions-stretched">
+      <span class="k-card-action">
+        <button
+          kendoButton
+          fillMode="flat"
+          themeColor="primary"
+          (click)="exportQRCode()"
+        >
+          Export as Image
+        </button>
+      </span>
+    </div>
+  </div>
+</div>

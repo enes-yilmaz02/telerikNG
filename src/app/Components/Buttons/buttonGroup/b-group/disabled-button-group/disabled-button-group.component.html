@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-6 example-col">
+    <p>Disabled ButtonGroup</p>
+    <kendo-buttongroup [disabled]="disabled">
+      <button kendoButton [toggleable]="true" [disabled]="disabled">
+        Bold
+      </button>
+      <button kendoButton [toggleable]="true" [disabled]="disabled">
+        Italic
+      </button>
+      <button kendoButton [toggleable]="true" [disabled]="disabled">
+        Underline
+      </button>
+    </kendo-buttongroup>
+  </div>
+  <div class="col-xs-12 col-sm-6 example-col">
+    <p>ButtonGroup with Disabled Button</p>
+    <kendo-buttongroup>
+      <button kendoButton [toggleable]="true">Bold</button>
+      <button kendoButton [toggleable]="true" [disabled]="disabled">
+        Italic
+      </button>
+      <button kendoButton [toggleable]="true">Underline</button>
+    </kendo-buttongroup>
+  </div>
+</div>
+<button kendoButton (click)="toggleDisabled()" themeColor="primary">
+  Toggle Disabled States
+</button>

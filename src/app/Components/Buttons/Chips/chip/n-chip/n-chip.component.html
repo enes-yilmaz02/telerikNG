@@ -1,0 +1,26 @@
+<div class="k-block">
+  <kendo-chip
+    *ngFor="let contact of selectedContacts"
+    [label]="contact.label"
+    [removable]="true"
+    [iconClass]="contact.iconClass"
+    (remove)="onRemove($event)"
+  >
+  </kendo-chip>
+  <div class="example">
+    <kendo-autocomplete
+      #contactslist
+      [data]="contacts"
+      class="contacts"
+      valueField="label"
+      [kendoDropDownFilter]="{ operator: 'contains' }"
+      [filterable]="true"
+      placeholder="To: Email Adress*"
+      (valueChange)="valueChange($event)"
+    >
+    </kendo-autocomplete>
+    <textarea class="k-textarea k-input">
+Hi there! Don’t miss out our dinner party!</textarea
+    >
+  </div>
+</div>
