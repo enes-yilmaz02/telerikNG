@@ -35,6 +35,11 @@ import { DropdownComponent } from './Components/Buttons/Drop-Down-Button/dropdow
 import { LayoutModule } from '@progress/kendo-angular-layout';
 import { GlobalComponent } from './Components/Buttons/global/global.component';
 import { RTL } from "@progress/kendo-angular-l10n";
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import 'hammerjs';
+import { SparklineModule } from '@progress/kendo-angular-charts';
+import { ChartsComponent } from './Components/charts/charts/charts.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,6 +64,7 @@ import { RTL } from "@progress/kendo-angular-l10n";
     OverviewComponent,
     DropdownComponent,
     GlobalComponent,
+    ChartsComponent,
 
 
 
@@ -77,7 +83,9 @@ import { RTL } from "@progress/kendo-angular-l10n";
     ChipModule,
     DropDownButtonModule,
     DropDownsModule,
-    LayoutModule
+    LayoutModule,
+    ChartsModule,
+    SparklineModule
   ],
   providers: [{ provide: RTL, useValue: true }],
   bootstrap: [AppComponent],
