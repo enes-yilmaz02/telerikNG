@@ -45,6 +45,7 @@ import { AxesComponent } from './Components/charts/elements/axes/axes.component'
 import { ChartAreaComponent } from './Components/charts/elements/chart-area/chart-area.component';
 import { CrosshairsComponent } from './Components/charts/elements/crosshairs/crosshairs.component';
 import { ErorrBarsComponent } from './Components/charts/elements/erorr-bars/erorr-bars.component';
+import { LabelsComponent } from './Components/charts/elements/labels/labels.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { ErorrBarsComponent } from './Components/charts/elements/erorr-bars/eror
     ChartAreaComponent,
     CrosshairsComponent,
     ErorrBarsComponent,
+    LabelsComponent,
 
 
 
