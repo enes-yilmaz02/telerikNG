@@ -41,6 +41,9 @@ import { SparklineModule } from '@progress/kendo-angular-charts';
 import { ChartsComponent } from './Components/charts/charts/charts.component';
 import { ElementsComponent } from './Components/charts/elements/elements.component';
 import { SeriesComponent } from './Components/charts/elements/series/series.component';
+import { AxesComponent } from './Components/charts/elements/axes/axes.component';
+import { ChartAreaComponent } from './Components/charts/elements/chart-area/chart-area.component';
+import { CrosshairsComponent } from './Components/charts/elements/crosshairs/crosshairs.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +72,9 @@ import { SeriesComponent } from './Components/charts/elements/series/series.comp
     ChartsComponent,
     ElementsComponent,
     SeriesComponent,
+    AxesComponent,
+    ChartAreaComponent,
+    CrosshairsComponent,
 
 
 

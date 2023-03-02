@@ -1,0 +1,25 @@
+<kendo-chart>
+  <kendo-chart-value-axis>
+    <kendo-chart-value-axis-item
+      [title]="{ text: 'Miles' }"
+      [min]="0"
+      [max]="100"
+    >
+      <!--                       ^^^^^     ^^^^^
+                 Note the binding is required,
+                 otherwise the property will be
+                 bound to a string.
+            -->
+    </kendo-chart-value-axis-item>
+  </kendo-chart-value-axis>
+
+  <kendo-chart-category-axis>
+    <kendo-chart-category-axis-item [categories]="categories">
+    </kendo-chart-category-axis-item>
+  </kendo-chart-category-axis>
+
+  <kendo-chart-series>
+    <kendo-chart-series-item [data]="seriesData" type="line">
+    </kendo-chart-series-item>
+  </kendo-chart-series>
+</kendo-chart>
