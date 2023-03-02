@@ -50,6 +50,7 @@ import { NotesComponent } from './Components/charts/elements/notes/notes.compone
 import { PanesComponent } from './Components/charts/elements/panes/panes.component';
 import { SelectionComponent } from './Components/charts/elements/selection/selection.component';
 import { SeriesHighlightComponent } from './Components/charts/elements/series-highlight/series-highlight.component';
+import { TooltipComponent } from './Components/charts/elements/tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -87,6 +88,7 @@ import { SeriesHighlightComponent } from './Components/charts/elements/series-hi
     PanesComponent,
     SelectionComponent,
     SeriesHighlightComponent,
+    TooltipComponent,
 
 
 
