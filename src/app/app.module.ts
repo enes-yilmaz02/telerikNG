@@ -47,6 +47,8 @@ import { CrosshairsComponent } from './Components/charts/elements/crosshairs/cro
 import { ErorrBarsComponent } from './Components/charts/elements/erorr-bars/erorr-bars.component';
 import { LabelsComponent } from './Components/charts/elements/labels/labels.component';
 import { NotesComponent } from './Components/charts/elements/notes/notes.component';
+import { PanesComponent } from './Components/charts/elements/panes/panes.component';
+import { SelectionComponent } from './Components/charts/elements/selection/selection.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +83,8 @@ import { NotesComponent } from './Components/charts/elements/notes/notes.compone
     ErorrBarsComponent,
     LabelsComponent,
     NotesComponent,
+    PanesComponent,
+    SelectionComponent,
 
 
 
