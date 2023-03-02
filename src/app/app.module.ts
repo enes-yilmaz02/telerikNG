@@ -39,6 +39,8 @@ import { ChartsModule } from '@progress/kendo-angular-charts';
 import 'hammerjs';
 import { SparklineModule } from '@progress/kendo-angular-charts';
 import { ChartsComponent } from './Components/charts/charts/charts.component';
+import { ElementsComponent } from './Components/charts/elements/elements.component';
+import { SeriesComponent } from './Components/charts/elements/series/series.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +67,8 @@ import { ChartsComponent } from './Components/charts/charts/charts.component';
     DropdownComponent,
     GlobalComponent,
     ChartsComponent,
+    ElementsComponent,
+    SeriesComponent,
 
 
 
