@@ -33,6 +33,8 @@ import { ChipListComponent } from './Components/Buttons/chiplist/chip-list/chip-
 import { OverviewComponent } from './Components/Buttons/chiplist/chip-list/overview/overview.component';
 import { DropdownComponent } from './Components/Buttons/Drop-Down-Button/dropdown/dropdown.component';
 import { LayoutModule } from '@progress/kendo-angular-layout';
+import { GlobalComponent } from './Components/Buttons/global/global.component';
+import { RTL } from "@progress/kendo-angular-l10n";
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +58,7 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
     ChipListComponent,
     OverviewComponent,
     DropdownComponent,
+    GlobalComponent,
 
 
 
@@ -76,7 +79,7 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
     DropDownsModule,
     LayoutModule
   ],
-  providers: [],
+  providers: [{ provide: RTL, useValue: true }],
   bootstrap: [AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
