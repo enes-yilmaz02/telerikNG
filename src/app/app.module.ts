@@ -65,6 +65,7 @@ import { PieSComponent } from './Components/charts/series-c/pie-s/pie-s.componen
 import { PolarSComponent } from './Components/charts/series-c/polar-s/polar-s.component';
 import { RadarSComponent } from './Components/charts/series-c/radar-s/radar-s.component';
 import { RangeareaSComponent } from './Components/charts/series-c/rangearea-s/rangearea-s.component';
+import { RangebarSComponent } from './Components/charts/series-c/rangebar-s/rangebar-s.component';
 
 @NgModule({
   declarations: [
@@ -117,6 +118,7 @@ import { RangeareaSComponent } from './Components/charts/series-c/rangearea-s/ra
     PolarSComponent,
     RadarSComponent,
     RangeareaSComponent,
+    RangebarSComponent,
 
 
 
