@@ -51,6 +51,9 @@ import { PanesComponent } from './Components/charts/elements/panes/panes.compone
 import { SelectionComponent } from './Components/charts/elements/selection/selection.component';
 import { SeriesHighlightComponent } from './Components/charts/elements/series-highlight/series-highlight.component';
 import { TooltipComponent } from './Components/charts/elements/tooltip/tooltip.component';
+import { SeriesCComponent } from './Components/charts/series-c/series-c.component';
+import { AreaSComponent } from './Components/charts/series-c/area-s/area-s.component';
+import { BarSComponent } from './Components/charts/series-c/bar-s/bar-s.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +92,9 @@ import { TooltipComponent } from './Components/charts/elements/tooltip/tooltip.c
     SelectionComponent,
     SeriesHighlightComponent,
     TooltipComponent,
+    SeriesCComponent,
+    AreaSComponent,
+    BarSComponent,
 
 
 
