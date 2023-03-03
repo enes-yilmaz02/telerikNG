@@ -63,6 +63,7 @@ import { HeatmapSComponent } from './Components/charts/series-c/heatmap-s/heatma
 import { LinestyleSComponent } from './Components/charts/series-c/linestyle-s/linestyle-s.component';
 import { PieSComponent } from './Components/charts/series-c/pie-s/pie-s.component';
 import { PolarSComponent } from './Components/charts/series-c/polar-s/polar-s.component';
+import { RadarSComponent } from './Components/charts/series-c/radar-s/radar-s.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +114,7 @@ import { PolarSComponent } from './Components/charts/series-c/polar-s/polar-s.co
     LinestyleSComponent,
     PieSComponent,
     PolarSComponent,
+    RadarSComponent,
 
 
 
