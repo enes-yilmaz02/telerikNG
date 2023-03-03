@@ -1,0 +1,19 @@
+<kendo-chart [title]="{ text: 'Rainfall - Wind Speed' }">
+  <kendo-chart-series>
+    <kendo-chart-series-item
+      type="scatter"
+      [data]="weatherData"
+      xField="rainfall"
+      yField="windSpeed"
+    >
+    </kendo-chart-series-item>
+  </kendo-chart-series>
+  <kendo-chart-x-axis>
+    <kendo-chart-x-axis-item [title]="{ text: 'Wind Speed [km/h]' }">
+    </kendo-chart-x-axis-item>
+  </kendo-chart-x-axis>
+  <kendo-chart-y-axis>
+    <kendo-chart-y-axis-item [title]="{ text: 'Rainfall [mm]' }">
+    </kendo-chart-y-axis-item>
+  </kendo-chart-y-axis>
+</kendo-chart>
