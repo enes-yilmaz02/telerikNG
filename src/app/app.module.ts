@@ -61,6 +61,7 @@ import { DonutSComponent } from './Components/charts/series-c/donut-s/donut-s.co
 import { FunnelSComponent } from './Components/charts/series-c/funnel-s/funnel-s.component';
 import { HeatmapSComponent } from './Components/charts/series-c/heatmap-s/heatmap-s.component';
 import { LinestyleSComponent } from './Components/charts/series-c/linestyle-s/linestyle-s.component';
+import { PieSComponent } from './Components/charts/series-c/pie-s/pie-s.component';
 
 @NgModule({
   declarations: [
@@ -109,6 +110,7 @@ import { LinestyleSComponent } from './Components/charts/series-c/linestyle-s/li
     FunnelSComponent,
     HeatmapSComponent,
     LinestyleSComponent,
+    PieSComponent,
 
 
 

@@ -1,0 +1,47 @@
+<div class="example-config">
+  <div class="col-sm example-col">
+    <h6>Label alignment</h6>
+
+    <label class="k-radio-label mr-3">
+      <input
+        kendoRadioButton
+        type="radio"
+        name="align"
+        value="circle"
+        [(ngModel)]="labelAlign"
+      />
+      Circle
+    </label>
+
+    <label class="k-radio-label">
+      <input
+        kendoRadioButton
+        type="radio"
+        name="align"
+        value="column"
+        [(ngModel)]="labelAlign"
+      />
+      Column
+    </label>
+  </div>
+</div>
+
+<kendo-chart style="height: 300px;" [transitions]="false">
+  <kendo-chart-series>
+    <kendo-chart-series-item
+      type="pie"
+      [data]="data"
+      categoryField="kind"
+      field="share"
+      [autoFit]="true"
+    >
+      <kendo-chart-series-item-labels
+        [align]="labelAlign"
+        color="#000"
+        [content]="labelContent"
+      >
+      </kendo-chart-series-item-labels>
+    </kendo-chart-series-item>
+  </kendo-chart-series>
+  <kendo-chart-legend [visible]="false"></kendo-chart-legend>
+</kendo-chart>
