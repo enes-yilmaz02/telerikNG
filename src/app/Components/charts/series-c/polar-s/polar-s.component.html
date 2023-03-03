@@ -1,0 +1,25 @@
+<kendo-chart [title]="{ text: 'Sun position at equinox' }">
+  <kendo-chart-series>
+    <kendo-chart-series-item
+      type="polarLine"
+      style="smooth"
+      [data]="sunPosData"
+      xField="azimuth"
+      yField="altitude"
+    >
+      <kendo-chart-series-item-labels
+        position="below"
+        [content]="labelContent"
+      >
+      </kendo-chart-series-item-labels>
+    </kendo-chart-series-item>
+  </kendo-chart-series>
+  <kendo-chart-x-axis>
+    <kendo-chart-x-axis-item [startAngle]="-90" [majorUnit]="30">
+    </kendo-chart-x-axis-item>
+  </kendo-chart-x-axis>
+  <kendo-chart-y-axis>
+    <kendo-chart-y-axis-item [labels]="{ visible: false }">
+    </kendo-chart-y-axis-item>
+  </kendo-chart-y-axis>
+</kendo-chart>
