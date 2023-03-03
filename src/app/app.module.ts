@@ -56,6 +56,7 @@ import { AreaSComponent } from './Components/charts/series-c/area-s/area-s.compo
 import { BarSComponent } from './Components/charts/series-c/bar-s/bar-s.component';
 import { BoxPlotSComponent } from './Components/charts/series-c/box-plot-s/box-plot-s.component';
 import { BubbleSComponent } from './Components/charts/series-c/bubble-s/bubble-s.component';
+import { BulletSComponent } from './Components/charts/series-c/bullet-s/bullet-s.component';
 
 @NgModule({
   declarations: [
@@ -99,6 +100,7 @@ import { BubbleSComponent } from './Components/charts/series-c/bubble-s/bubble-s
     BarSComponent,
     BoxPlotSComponent,
     BubbleSComponent,
+    BulletSComponent,
 
 
 
