@@ -54,6 +54,8 @@ import { TooltipComponent } from './Components/charts/elements/tooltip/tooltip.c
 import { SeriesCComponent } from './Components/charts/series-c/series-c.component';
 import { AreaSComponent } from './Components/charts/series-c/area-s/area-s.component';
 import { BarSComponent } from './Components/charts/series-c/bar-s/bar-s.component';
+import { BoxPlotSComponent } from './Components/charts/series-c/box-plot-s/box-plot-s.component';
+import { BubbleSComponent } from './Components/charts/series-c/bubble-s/bubble-s.component';
 
 @NgModule({
   declarations: [
@@ -95,6 +97,8 @@ import { BarSComponent } from './Components/charts/series-c/bar-s/bar-s.componen
     SeriesCComponent,
     AreaSComponent,
     BarSComponent,
+    BoxPlotSComponent,
+    BubbleSComponent,
 
 
 
