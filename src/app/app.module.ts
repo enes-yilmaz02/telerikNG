@@ -67,6 +67,7 @@ import { RadarSComponent } from './Components/charts/series-c/radar-s/radar-s.co
 import { RangeareaSComponent } from './Components/charts/series-c/rangearea-s/rangearea-s.component';
 import { RangebarSComponent } from './Components/charts/series-c/rangebar-s/rangebar-s.component';
 import { ScatterSComponent } from './Components/charts/series-c/scatter-s/scatter-s.component';
+import { WaterfallSComponent } from './Components/charts/series-c/waterfall-s/waterfall-s.component';
 
 @NgModule({
   declarations: [
@@ -121,6 +122,7 @@ import { ScatterSComponent } from './Components/charts/series-c/scatter-s/scatte
     RangeareaSComponent,
     RangebarSComponent,
     ScatterSComponent,
+    WaterfallSComponent,
 
 
 
