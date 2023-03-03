@@ -68,6 +68,7 @@ import { RangeareaSComponent } from './Components/charts/series-c/rangearea-s/ra
 import { RangebarSComponent } from './Components/charts/series-c/rangebar-s/rangebar-s.component';
 import { ScatterSComponent } from './Components/charts/series-c/scatter-s/scatter-s.component';
 import { WaterfallSComponent } from './Components/charts/series-c/waterfall-s/waterfall-s.component';
+import { PanningZoomingComponent } from './Components/charts/charts/panning-zooming/panning-zooming.component';
 
 @NgModule({
   declarations: [
@@ -123,6 +124,7 @@ import { WaterfallSComponent } from './Components/charts/series-c/waterfall-s/wa
     RangebarSComponent,
     ScatterSComponent,
     WaterfallSComponent,
+    PanningZoomingComponent,
 
 
 
