@@ -57,6 +57,7 @@ import { BarSComponent } from './Components/charts/series-c/bar-s/bar-s.componen
 import { BoxPlotSComponent } from './Components/charts/series-c/box-plot-s/box-plot-s.component';
 import { BubbleSComponent } from './Components/charts/series-c/bubble-s/bubble-s.component';
 import { BulletSComponent } from './Components/charts/series-c/bullet-s/bullet-s.component';
+import { DonutSComponent } from './Components/charts/series-c/donut-s/donut-s.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +102,7 @@ import { BulletSComponent } from './Components/charts/series-c/bullet-s/bullet-s
     BoxPlotSComponent,
     BubbleSComponent,
     BulletSComponent,
+    DonutSComponent,
 
 
 
