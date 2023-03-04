@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./date-picker.component.scss']
 })
 export class DatePickerComponent {
+  public value: Date = new Date(2000, 2, 10);
 
 }
