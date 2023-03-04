@@ -73,6 +73,17 @@ import { ChatModule } from "@progress/kendo-angular-conversational-ui";
 import { ChatBotComponent } from './Components/chat-bot/chat-bot.component';
 import { ChatCComponent } from './Components/chat-bot/chat-c/chat-c.component';
 import { ChatService } from './Models/chat.service';
+import { InputsComponent } from './Components/date-inputs/inputs/inputs.component';
+import { CalendarComponent } from './Components/date-inputs/inputs/calendar/calendar.component';
+import { DateInputComponent } from './Components/date-inputs/inputs/date-input/date-input.component';
+import { DatePickerComponent } from './Components/date-inputs/inputs/date-picker/date-picker.component';
+import { DateRangeComponent } from './Components/date-inputs/inputs/date-range/date-range.component';
+import { DatetimePickerComponent } from './Components/date-inputs/inputs/datetime-picker/datetime-picker.component';
+import { MultiviewCalendarComponent } from './Components/date-inputs/inputs/multiview-calendar/multiview-calendar.component';
+import { TimePickerComponent } from './Components/date-inputs/inputs/time-picker/time-picker.component';
+import { IntlModule } from "@progress/kendo-angular-intl";
+import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -130,6 +141,14 @@ import { ChatService } from './Models/chat.service';
     PanningZoomingComponent,
     ChatBotComponent,
     ChatCComponent,
+    InputsComponent,
+    CalendarComponent,
+    DateInputComponent,
+    DatePickerComponent,
+    DateRangeComponent,
+    DatetimePickerComponent,
+    MultiviewCalendarComponent,
+    TimePickerComponent,
 
 
 
@@ -151,7 +170,9 @@ import { ChatService } from './Models/chat.service';
     LayoutModule,
     ChartsModule,
     SparklineModule,
-    ChatModule
+    ChatModule,
+    IntlModule,
+    DateInputsModule
   ],
   providers: [{ provide: RTL, useValue: true },ChatService],
   bootstrap: [AppComponent],
