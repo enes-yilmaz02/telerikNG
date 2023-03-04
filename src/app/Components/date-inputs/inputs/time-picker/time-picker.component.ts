@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./time-picker.component.scss']
 })
 export class TimePickerComponent {
-
+  public value: Date = new Date(2000, 2, 10, 10, 30, 0);
 }

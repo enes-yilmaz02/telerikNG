@@ -1,1 +1,11 @@
-<p>time-picker works!</p>
+<div class="example-config">
+  Selected value is: {{ value | kendoDate : "hh:mm:ss a" }}
+</div>
+<div class="example-wrapper" style="min-height: 400px">
+  <p>Select a time value:</p>
+  <kendo-timepicker [(value)]="value"></kendo-timepicker>
+  <p>
+    (use Alt+↓ to open the time list, Tab to move to the next time section
+    in the popup, ↑ to increment and ↓ to decrement the value)
+  </p>
+</div>
