@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./date-range.component.scss']
 })
 export class DateRangeComponent {
-
+  public range = { start: null, end: null };
 }

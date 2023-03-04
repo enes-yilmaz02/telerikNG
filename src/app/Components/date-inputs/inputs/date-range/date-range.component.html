@@ -1,1 +1,15 @@
-<p>date-range works!</p>
+<div class="example-config">Selected range: {{ range | json }}</div>
+<kendo-daterange>
+  <kendo-floatinglabel text="Start">
+    <kendo-dateinput
+      kendoDateRangeStartInput
+      [(value)]="range.start"
+    ></kendo-dateinput>
+  </kendo-floatinglabel>
+  <kendo-floatinglabel text="End">
+    <kendo-dateinput
+      kendoDateRangeEndInput
+      [(value)]="range.end"
+    ></kendo-dateinput>
+  </kendo-floatinglabel>
+</kendo-daterange>
