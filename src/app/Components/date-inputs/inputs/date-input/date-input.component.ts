@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./date-input.component.scss']
 })
 export class DateInputComponent {
-
+  public value: Date = new Date(2000, 2, 10);
 }
