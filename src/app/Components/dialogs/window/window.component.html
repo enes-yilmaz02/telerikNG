@@ -1,1 +1,13 @@
-<p>window works!</p>
+<ng-template #itemListRef>
+  <p>Your list contains {{ items.length }} items:</p>
+
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+</ng-template>
+
+<button kendoButton (click)="showList(itemListRef)">
+  Show my shopping list
+</button>
+
+<div kendoWindowContainer></div>

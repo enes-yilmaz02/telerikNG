@@ -86,6 +86,7 @@ import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
 import { DialogsComponent } from './Components/dialogs/dialogs.component';
 import { DialogComponent } from './Components/dialogs/dialog/dialog.component';
 import { WindowComponent } from './Components/dialogs/window/window.component';
+import { WindowService, DialogsModule } from '@progress/kendo-angular-dialog';
 
 @NgModule({
   declarations: [
@@ -178,9 +179,10 @@ import { WindowComponent } from './Components/dialogs/window/window.component';
     SparklineModule,
     ChatModule,
     IntlModule,
-    DateInputsModule
+    DateInputsModule,
+    DialogsModule
   ],
-  providers: [{ provide: RTL, useValue: true },ChatService],
+  providers: [{ provide: RTL, useValue: true },ChatService,WindowService],
   bootstrap: [AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
