@@ -69,7 +69,10 @@ import { RangebarSComponent } from './Components/charts/series-c/rangebar-s/rang
 import { ScatterSComponent } from './Components/charts/series-c/scatter-s/scatter-s.component';
 import { WaterfallSComponent } from './Components/charts/series-c/waterfall-s/waterfall-s.component';
 import { PanningZoomingComponent } from './Components/charts/charts/panning-zooming/panning-zooming.component';
-
+import { ChatModule } from "@progress/kendo-angular-conversational-ui";
+import { ChatBotComponent } from './Components/chat-bot/chat-bot.component';
+import { ChatCComponent } from './Components/chat-bot/chat-c/chat-c.component';
+import { ChatService } from './Models/chat.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -125,6 +128,8 @@ import { PanningZoomingComponent } from './Components/charts/charts/panning-zoom
     ScatterSComponent,
     WaterfallSComponent,
     PanningZoomingComponent,
+    ChatBotComponent,
+    ChatCComponent,
 
 
 
@@ -145,9 +150,10 @@ import { PanningZoomingComponent } from './Components/charts/charts/panning-zoom
     DropDownsModule,
     LayoutModule,
     ChartsModule,
-    SparklineModule
+    SparklineModule,
+    ChatModule
   ],
-  providers: [{ provide: RTL, useValue: true }],
+  providers: [{ provide: RTL, useValue: true },ChatService],
   bootstrap: [AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
