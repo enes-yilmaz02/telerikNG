@@ -83,6 +83,9 @@ import { MultiviewCalendarComponent } from './Components/date-inputs/inputs/mult
 import { TimePickerComponent } from './Components/date-inputs/inputs/time-picker/time-picker.component';
 import { IntlModule } from "@progress/kendo-angular-intl";
 import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
+import { DialogsComponent } from './Components/dialogs/dialogs.component';
+import { DialogComponent } from './Components/dialogs/dialog/dialog.component';
+import { WindowComponent } from './Components/dialogs/window/window.component';
 
 @NgModule({
   declarations: [
@@ -149,6 +152,9 @@ import { DateInputsModule } from "@progress/kendo-angular-dateinputs";
     DatetimePickerComponent,
     MultiviewCalendarComponent,
     TimePickerComponent,
+    DialogsComponent,
+    DialogComponent,
+    WindowComponent,
 
 
 
