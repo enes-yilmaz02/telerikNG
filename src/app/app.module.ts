@@ -89,6 +89,7 @@ import { WindowComponent } from './Components/dialogs/window/window.component';
 import { WindowService, DialogsModule } from '@progress/kendo-angular-dialog';
 import { DrawingComponent } from './Components/drawing/drawing.component';
 import { BasicShapesComponent } from './Components/drawing/basic-shapes/basic-shapes.component';
+import { DomElementsComponent } from './Components/drawing/dom-elements/dom-elements.component';
 
 @NgModule({
   declarations: [
@@ -160,6 +161,7 @@ import { BasicShapesComponent } from './Components/drawing/basic-shapes/basic-sh
     WindowComponent,
     DrawingComponent,
     BasicShapesComponent,
+    DomElementsComponent,
 
 
 

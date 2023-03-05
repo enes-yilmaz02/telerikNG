@@ -1,0 +1,21 @@
+<button class="k-button" (click)="onClick(drawMe)">Export PDF...</button>
+    <div #drawMe>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Unit Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of data">
+            <td>{{ row.productName }}</td>
+            <td>{{ row.unitPrice }}</td>
+            <td>{{ row.qty }}</td>
+            <td>{{ row.total }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
