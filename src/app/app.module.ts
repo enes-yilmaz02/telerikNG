@@ -98,6 +98,15 @@ import { DropdowntreeComponent } from './Components/dropdowns/dropdowntree/dropd
 import { MulticolumncomboboxComponent } from './Components/dropdowns/multicolumncombobox/multicolumncombobox.component';
 import { MultiselectComponent } from './Components/dropdowns/multiselect/multiselect.component';
 import { MultiselecttreeComponent } from './Components/dropdowns/multiselecttree/multiselecttree.component';
+import { EditorComponent } from './Components/editor/editor.component';
+import { ToolbartoolsComponent } from './Components/editor/toolbartools/toolbartools.component';
+import { FormsupportComponent } from './Components/editor/formsupport/formsupport.component';
+import { PmSchemaComponent } from './Components/editor/pm-schema/pm-schema.component';
+import { PmPluginsComponent } from './Components/editor/pm-plugins/pm-plugins.component';
+import { ResponsivetoolbarComponent } from './Components/editor/responsivetoolbar/responsivetoolbar.component';
+import { SelectiontextComponent } from './Components/editor/selectiontext/selectiontext.component';
+import { EditorModule } from "@progress/kendo-angular-editor";
+import { PopupComponent } from './Components/editor/pm-plugins/popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -178,6 +187,14 @@ import { MultiselecttreeComponent } from './Components/dropdowns/multiselecttree
     MulticolumncomboboxComponent,
     MultiselectComponent,
     MultiselecttreeComponent,
+    EditorComponent,
+    ToolbartoolsComponent,
+    FormsupportComponent,
+    PmSchemaComponent,
+    PmPluginsComponent,
+    ResponsivetoolbarComponent,
+    SelectiontextComponent,
+    PopupComponent,
 
 
 
@@ -202,7 +219,9 @@ import { MultiselecttreeComponent } from './Components/dropdowns/multiselecttree
     ChatModule,
     IntlModule,
     DateInputsModule,
-    DialogsModule
+    DialogsModule,
+    EditorModule
+
   ],
   providers: [{ provide: RTL, useValue: true },ChatService,WindowService],
   bootstrap: [AppComponent],

@@ -1,0 +1,16 @@
+<form #form="ngForm">
+  <div class="example-config">
+    Editor contents:
+    <pre
+      >{{ content }}
+        </pre
+    >
+  </div>
+  <div class="example-wrapper">
+    <kendo-editor
+      [(ngModel)]="content"
+      name="content"
+      style="height: 300px;"
+    ></kendo-editor>
+  </div>
+</form>

@@ -1,0 +1,13 @@
+<p>Make a selection and click the search button.</p>
+<div class="wrapper-relative">
+  <kendo-editor
+    [plugins]=""
+    [(ngModel)]="value"
+    style="height: 450px;"
+  ></kendo-editor>
+  <my-popup
+    *ngIf="showPopup"
+    [ngStyle]="position"
+    [searchTerm]="selectionText"
+  ></my-popup>
+</div>

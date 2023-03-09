@@ -1,0 +1,7 @@
+<kendo-editor #editor [value]="value" style="height: 370px;"></kendo-editor>
+    <button kendoButton class="show-text" (click)="showSelectedText(editor)">
+      Show selection text
+    </button>
+    <div *ngIf="showSelected">
+      <strong>Selection text: </strong>{{ selectionText }}
+    </div>
