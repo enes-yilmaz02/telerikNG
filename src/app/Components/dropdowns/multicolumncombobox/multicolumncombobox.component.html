@@ -1,0 +1,23 @@
+<kendo-label class="k-display-block" [for]="list" text="Contact person:">
+</kendo-label>
+<kendo-multicolumncombobox
+  #list
+  [data]="contacts"
+  [listHeight]="300"
+  textField="name"
+  valueField="id"
+>
+  <kendo-combobox-column field="name" title="Contact Name" [width]="200">
+    <ng-template kendoMultiColumnComboBoxColumnCellTemplate let-dataItem>
+      <img class="contact-image" [src]="getContactImageUrl(dataItem.id)" />
+      <span>{{ dataItem.name }}</span>
+    </ng-template>
+  </kendo-combobox-column>
+  <kendo-combobox-column field="jobTitle" title="Title" [width]="200">
+  </kendo-combobox-column>
+  <kendo-combobox-column field="company" title="Company" [width]="200">
+  </kendo-combobox-column>
+  <ng-template kendoMultiColumnComboBoxFooterTemplate>
+    <strong> {{ contacts.length }} records in total </strong>
+  </ng-template>
+</kendo-multicolumncombobox>

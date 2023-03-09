@@ -90,6 +90,14 @@ import { WindowService, DialogsModule } from '@progress/kendo-angular-dialog';
 import { DrawingComponent } from './Components/drawing/drawing.component';
 import { BasicShapesComponent } from './Components/drawing/basic-shapes/basic-shapes.component';
 import { DomElementsComponent } from './Components/drawing/dom-elements/dom-elements.component';
+import { DropdownsComponent } from './Components/dropdowns/dropdowns.component';
+import { AutocompleteComponent } from './Components/dropdowns/autocomplete/autocomplete.component';
+import { ComboboxComponent } from './Components/dropdowns/combobox/combobox.component';
+import { DropdownslistComponent } from './Components/dropdowns/dropdownslist/dropdownslist.component';
+import { DropdowntreeComponent } from './Components/dropdowns/dropdowntree/dropdowntree.component';
+import { MulticolumncomboboxComponent } from './Components/dropdowns/multicolumncombobox/multicolumncombobox.component';
+import { MultiselectComponent } from './Components/dropdowns/multiselect/multiselect.component';
+import { MultiselecttreeComponent } from './Components/dropdowns/multiselecttree/multiselecttree.component';
 
 @NgModule({
   declarations: [
@@ -162,6 +170,14 @@ import { DomElementsComponent } from './Components/drawing/dom-elements/dom-elem
     DrawingComponent,
     BasicShapesComponent,
     DomElementsComponent,
+    DropdownsComponent,
+    AutocompleteComponent,
+    ComboboxComponent,
+    DropdownslistComponent,
+    DropdowntreeComponent,
+    MulticolumncomboboxComponent,
+    MultiselectComponent,
+    MultiselecttreeComponent,
 
 
 
