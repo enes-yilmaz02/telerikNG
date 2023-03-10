@@ -1,0 +1,15 @@
+<kendo-filter
+      #filter
+      [filters]="filters"
+      [value]="value"
+      (valueChange)="onFilterChange($event)"
+    >
+    </kendo-filter>
+
+    <ng-template let-currentItem #template>
+      <kendo-dropdownlist
+        [data]="['foo', 'bar']"
+        (valueChange)="editorValueChange($event, currentItem, filter.value)"
+      >
+      </kendo-dropdownlist>
+    </ng-template>

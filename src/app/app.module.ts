@@ -108,7 +108,11 @@ import { SelectiontextComponent } from './Components/editor/selectiontext/select
 import { EditorModule } from "@progress/kendo-angular-editor";
 import { PopupComponent } from './Components/editor/pm-plugins/popup/popup.component';
 import { ExcelexportComponent } from './Components/excelexport/excelexport.component';
-
+import { FiltersComponent } from './Components/filters/filters.component';
+import { FilterComponent } from './Components/filters/filter/filter.component';
+import { VsluebindingComponent } from './Components/filters/vsluebinding/vsluebinding.component';
+import { ExpressionComponent } from './Components/filters/expression/expression.component';
+import { FilterModule } from '@progress/kendo-angular-filter';
 @NgModule({
   declarations: [
     AppComponent,
@@ -197,6 +201,10 @@ import { ExcelexportComponent } from './Components/excelexport/excelexport.compo
     SelectiontextComponent,
     PopupComponent,
     ExcelexportComponent,
+    FiltersComponent,
+    FilterComponent,
+    VsluebindingComponent,
+    ExpressionComponent,
 
 
 
@@ -222,7 +230,8 @@ import { ExcelexportComponent } from './Components/excelexport/excelexport.compo
     IntlModule,
     DateInputsModule,
     DialogsModule,
-    EditorModule
+    EditorModule,
+    FilterModule
 
   ],
   providers: [{ provide: RTL, useValue: true },ChatService,WindowService],
