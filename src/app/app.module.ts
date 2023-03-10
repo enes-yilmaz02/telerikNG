@@ -107,6 +107,7 @@ import { ResponsivetoolbarComponent } from './Components/editor/responsivetoolba
 import { SelectiontextComponent } from './Components/editor/selectiontext/selectiontext.component';
 import { EditorModule } from "@progress/kendo-angular-editor";
 import { PopupComponent } from './Components/editor/pm-plugins/popup/popup.component';
+import { ExcelexportComponent } from './Components/excelexport/excelexport.component';
 
 @NgModule({
   declarations: [
@@ -195,6 +196,7 @@ import { PopupComponent } from './Components/editor/pm-plugins/popup/popup.compo
     ResponsivetoolbarComponent,
     SelectiontextComponent,
     PopupComponent,
+    ExcelexportComponent,
 
 
 
